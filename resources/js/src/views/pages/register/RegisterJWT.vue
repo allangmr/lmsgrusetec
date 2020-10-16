@@ -13,51 +13,60 @@ Author URL: http://www.themeforest.net/user/pixinvent
     <vs-input
       v-validate="'required|alpha_dash|min:3'"
       data-vv-validate-on="blur"
-      label-placeholder="Name"
+      label-placeholder="Ingrese su nombre completo"
       name="displayName"
-      placeholder="Name"
+      placeholder="Nombre Completo"
       v-model="displayName"
       class="w-full" />
     <span class="text-danger text-sm">{{ errors.first('displayName') }}</span>
 
     <vs-input
+      v-validate="'required|number'"
+      data-vv-validate-on="blur"
+      name="numero"
+      type="text"
+      label-placeholder="Ingrese su número de identificación"
+      placeholder="Numero de Identificación"
+      v-model="email"
+      class="w-full mt-6" />
+    <span class="text-danger text-sm">{{ errors.first('numero') }}</span>
+
+    <vs-input
       v-validate="'required|email'"
       data-vv-validate-on="blur"
       name="email"
-      type="email"
-      label-placeholder="Email"
-      placeholder="Email"
+      type="text"
+      label-placeholder="Ingrese su correo electrónico "
+      placeholder="Correo Electrónico"
       v-model="email"
       class="w-full mt-6" />
     <span class="text-danger text-sm">{{ errors.first('email') }}</span>
 
     <vs-input
-      ref="password"
-      type="password"
+      v-validate="'required|number'"
       data-vv-validate-on="blur"
-      v-validate="'required|min:6|max:10'"
-      name="password"
-      label-placeholder="Password"
-      placeholder="Password"
-      v-model="password"
+      name="tel"
+      type="text"
+      label-placeholder="Ingrese su número telefonico"
+      placeholder="Número telefonico"
+      v-model="email"
       class="w-full mt-6" />
-    <span class="text-danger text-sm">{{ errors.first('password') }}</span>
+    <span class="text-danger text-sm">{{ errors.first('tel') }}</span>
 
     <vs-input
-      type="password"
-      v-validate="'min:6|max:10|confirmed:password'"
+      v-validate="'required|number'"
       data-vv-validate-on="blur"
-      data-vv-as="password"
-      name="confirm_password"
-      label-placeholder="Confirm Password"
-      placeholder="Confirm Password"
-      v-model="confirm_password"
+      name="usuario"
+      type="text"
+      label-placeholder="Ingrese su código de usuario"
+      placeholder="Código de usuario"
+      v-model="email"
       class="w-full mt-6" />
-    <span class="text-danger text-sm">{{ errors.first('confirm_password') }}</span>
-
-    <vs-checkbox v-model="isTermsConditionAccepted" class="mt-6">I accept the terms & conditions.</vs-checkbox>
-    <vs-button  type="border" to="/pages/login" class="mt-6">Login</vs-button>
-    <vs-button class="float-right mt-6" @click="registerUserJWt" :disabled="!validateForm">Register</vs-button>
+    <span class="text-danger text-sm">{{ errors.first('usuario') }}</span>
+    <div>
+        <vs-button  type="border" to="/pages/login" class="mt-6 ">ENVIAR</vs-button>
+        <vs-button  type="border" to="/pages/login" class="mt-6">IR A INGRESO</vs-button>
+    </div>
   </div>
 </template>
 
