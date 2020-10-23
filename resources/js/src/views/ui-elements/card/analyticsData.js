@@ -690,7 +690,7 @@ export default {
         sparkline: {
         }
       },
-      labels: ['Completed Tickets']
+      labels: ['Lecciones Completadas']
     }
   },
   // RADAR
@@ -703,7 +703,7 @@ export default {
     //     data: [70, 75, 70, 76, 20, 85],
     // }],
     chartOptions: {
-      labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+      labels: ['En', 'Feb', 'Mar', 'Abr', 'May', 'Jun'],
       dataLabels: {
         style: {
           colors: ['#b9c3cd', '#b9c3cd', '#b9c3cd', '#b9c3cd', '#b9c3cd', '#b9c3cd']

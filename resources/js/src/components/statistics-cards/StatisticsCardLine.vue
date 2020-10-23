@@ -10,12 +10,12 @@
 <template>
     <vx-card class="overflow-hidden">
         <div slot="no-body">
-            <div class="p-6" :class="{
+            <div class="pt-3 pb-0 pl-6 pr-6" :class="{
               'flex justify-between flex-row-reverse items-center': iconRight,
               'text-center': !iconRight && hideChart,
               'pb-0': !hideChart
             }">
-                <feather-icon :icon="icon" class="p-3 inline-flex rounded-full" :class="[`text-${color}`, {'mb-4': !iconRight}]" :style="{background: `rgba(var(--vs-${color}),.15)`}"></feather-icon>
+                <feather-icon :icon="icon" class="p-3 inline-flex rounded-full" :class="[`text-${color}`, {'mb-2': !iconRight}]" :style="{background: `rgba(var(--vs-${color}),.15)`}"></feather-icon>
                 <div class="truncate">
                     <h2 class="mb-1 font-bold">{{ statistic }}</h2>
                     <span>{{ statisticTitle }}</span>

@@ -83,9 +83,9 @@ const data = {
     analyticsData: {
       openTickets: 163,
       meta: {
-        'New Tickets': 29,
-        'Open Tickets': 63,
-        'Response Time': '1d'
+        'Lecciones Pendientes': 29,
+        'Total de Lecciones': 63,
+        'Tiempo Restante': '10d'
       }
     },
     series: [83]
