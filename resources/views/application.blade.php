@@ -8,6 +8,7 @@
     <!-- <link rel="icon" href="<%= BASE_URL %>favicon.ico"> -->
 
     <title>IOPS</title>
+    @laravelPWA
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset(mix('css/main.css')) }}">
     <link rel="stylesheet" href="{{ asset(mix('css/iconfont.css')) }}">
@@ -18,7 +19,6 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ asset('images/logo/favicon.png') }}">
-    @laravelPWA
   </head>
   <body>
     <noscript>
