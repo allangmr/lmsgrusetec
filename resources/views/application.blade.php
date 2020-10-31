@@ -18,6 +18,7 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ asset('images/logo/favicon.png') }}">
+    @laravelPWA
   </head>
   <body>
     <noscript>

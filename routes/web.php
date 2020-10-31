@@ -13,4 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/offline', function () {
+    return view('modules/laravelpwa/offline');
+});
+
 Route::get('/{any}', 'ApplicationController')->where('any', '.*');

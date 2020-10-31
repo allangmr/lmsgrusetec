@@ -76,41 +76,6 @@ export default [
     ]
   },
   {
-    header: 'HERRAMIENTAS',
-    icon: 'PackageIcon',
-    items: [
-      {
-        url: "/apps/test-page",
-        name: "testPage",
-        slug: "testPage",
-        icon: "PlayCircleIcon",
-        i18n: 'Test'
-      },
-      {
-        url: '/apps/chat',
-        name: 'Chat',
-        slug: 'chat',
-        icon: 'MessageSquareIcon',
-        i18n: 'Chat'
-      },
-      {
-        url: '/apps/todo',
-        name: 'Tareas',
-        slug: 'todo',
-        icon: 'CheckSquareIcon',
-        i18n: 'Tareas'
-      },
-      {
-        url: '/apps/calendar/vue-simple-calendar',
-        name: 'Calendario',
-        slug: 'calendar-simple-calendar',
-        icon: 'CalendarIcon',
-        tagColor: 'success',
-        i18n: 'Calendario'
-      }
-    ]
-  },
-  {
     header: 'USUARIOS',
     i18n: 'USUARIOS',
     items: [
