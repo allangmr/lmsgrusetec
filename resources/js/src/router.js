@@ -46,10 +46,6 @@ const router = new Router({
         // =============================================================================
         {
           path: '/',
-          redirect: '/dashboard/analytics'
-        },
-        {
-          path: '/dashboard/analytics',
           name: 'dashboard-analytics',
           component: () => import('./views/DashboardAnalytics.vue'),
           meta: {
